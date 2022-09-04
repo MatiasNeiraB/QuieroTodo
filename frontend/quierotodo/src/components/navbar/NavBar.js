@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/esm/Button';
 import { useState } from 'react';
-import ModalLogin from '../modal/ModalLogin';
+import ModalLogin from '../Modal/ModalLogin';
 
 
 
@@ -16,7 +16,7 @@ const NavBar = () => {
         <>
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Catalogo Quiero Todo</Navbar.Brand>
+                <Navbar.Brand href="#home">Catálogo Quiero Todo</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
