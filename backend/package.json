@@ -1,0 +1,23 @@
+{
+  "name": "quierotodo-db",
+  "version": "1.0.0",
+  "description": "product quiero todo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasNeiraB/QuieroTodo-Backend.git"
+  },
+  "author": "Matias Neira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasNeiraB/QuieroTodo-Backend/issues"
+  },
+  "homepage": "https://github.com/MatiasNeiraB/QuieroTodo-Backend#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
