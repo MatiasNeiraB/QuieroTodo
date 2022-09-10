@@ -1,12 +1,12 @@
-const http = require('http');
+const express = require('express')
+const app = express();
+const producto = require('./routes/producto')
+const {connectDB} = require('./db/db.js')
+const dotenv = require('dotenv').config();
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html')
-    res.end('<h1>hola<h1/>')
+connectDB();
+app.use('/product', producto)
 
-})
-
-server.listen(4000, () => {
-    console.log('Conectado a DB');
+app.listen(4000,()=>{
+    console.log('toy atr cuchando');
 })
