@@ -7,6 +7,6 @@ const dotenv = require('dotenv').config();
 connectDB();
 app.use('/product', producto)
 
-app.listen(4000,()=>{
-    console.log('toy atr cuchando');
+app.listen(4000,()=>{   
+    console.log('Escuchando Puerto 4000');
 })

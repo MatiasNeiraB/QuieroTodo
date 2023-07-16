@@ -2,7 +2,7 @@ const {Router} = require('express');
 const { GetProduct, DeleteProduct, NewProduct } = require('../controllers/productos');
 const router = Router();
 
-router.get('/', GetProduct)
+router.get('/get', GetProduct)
 
 router.post('/', NewProduct)
 
