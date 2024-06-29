@@ -1,11 +1,11 @@
-import ModalEditProduct from "../components/ModalEditProduct/ModalEditProduct";
-import PanelAdmin from "../components/Panel Admin/PanelAdmin";
+//import ModalEditProduct from "../components/ModalEditProduct/ModalEditProduct";
+import ProductsAdmin from "../components/productsAdmin/productsAdmin";
 
 
 
 const Admin = () => {
     return (
-        <PanelAdmin/>
+        <ProductsAdmin/>
     );
 }
 

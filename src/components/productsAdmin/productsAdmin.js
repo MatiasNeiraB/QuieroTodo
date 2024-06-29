@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axiosClient from '../../config/axiosClient';
-import { Container, Form, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ModalEditProduct from "../ModalEditProduct/ModalEditProduct";
 
 
-const PanelAdmin = () => {
+const ProductsAdmin = () => {
 
     const [products, setProducts] = useState([]);
     const [tablaProducts, setTablaProducts] = useState([]);
@@ -16,7 +16,7 @@ const PanelAdmin = () => {
 
     const getProducts = async () => {
         try {
-            const response = await axiosClient.get("/product/");
+            const response = await axiosClient.get("/product");
             setProducts(response.data);
             setTablaProducts(response.data);
             //console.log(response.data)
@@ -81,4 +81,4 @@ const PanelAdmin = () => {
 
 }
 
-export default PanelAdmin;
+export default ProductsAdmin;
