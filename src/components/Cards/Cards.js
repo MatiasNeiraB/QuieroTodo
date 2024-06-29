@@ -10,7 +10,6 @@ const CardProduct = () => {
         try {
             const response = await axiosClient.get("/product");
             setProducts(response.data);
-            console.log(products)
         } catch (error) {
             console.log(error);
         }

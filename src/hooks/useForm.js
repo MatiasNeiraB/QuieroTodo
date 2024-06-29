@@ -17,7 +17,7 @@ const useForm = (initialState, submit, validate) => {
     }, [errors])
 
     const handleKeyUp = (e) => {
-        console.log(e.target.value);
+       // console.log(e.target.value);
         if (validate) {
             setErrors(validate(values));
 
@@ -27,7 +27,7 @@ const useForm = (initialState, submit, validate) => {
             ...values,
             [e.target.name]: { value: e.target.value }
         })
-        console.log(values);
+        //console.log(values);
 
     }
 
@@ -43,8 +43,8 @@ const useForm = (initialState, submit, validate) => {
 
     };
 
-    console.log(values)
-    console.log(errors);
+   // console.log(values)
+    //console.log(errors);
 
 
 

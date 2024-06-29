@@ -1,15 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/esm/Button';
-import { useState } from 'react';
-import ModalLogin from '../modal/ModalLogin';
+import { useEffect, useState } from 'react';
+import ModalLogin from '../Modal/ModalLogin';
 import { Form } from 'react-bootstrap';
+
 
 
 
 const NavBar = () => {
 
     const [show, setShow] = useState(false);
+    
+
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
